@@ -137,6 +137,9 @@ function ItemDisplay({ item, onItemUpdate, onItemRemoval }) {
     };
 
     return (
+        <h1>
+        ToDo App by Papon Choonhaklai
+        </h1>
         <Container fluid className={`item ${item.completed && 'completed'}`}>
             <Row>
                 <Col xs={1} className="text-center">
