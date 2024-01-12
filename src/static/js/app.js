@@ -3,6 +3,11 @@ function App() {
     return (
         <Container>
             <Row>
+                <Col md={{ span: 12 }} className="text-center mb-4">
+                    <h1>ToDo App by Papon Choonhaklai</h1>
+                </Col>
+            </Row>
+            <Row>
                 <Col md={{ offset: 3, span: 6 }}>
                     <TodoListCard />
                 </Col>
@@ -140,9 +145,6 @@ function ItemDisplay({ item, onItemUpdate, onItemRemoval }) {
         <Container fluid className={`item ${item.completed && 'completed'}`}>
             <Row>
                 <Col xs={1} className="text-center">
-                    <Col xs={12}>
-                      <h1 className="text-center">ToDo App by Papon Choonhaklai</h1>
-                    </Col>
                     <Button
                         className="toggles"
                         size="sm"
