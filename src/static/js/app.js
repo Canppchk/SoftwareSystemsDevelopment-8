@@ -139,10 +139,10 @@ function ItemDisplay({ item, onItemUpdate, onItemRemoval }) {
     return (
         <Container fluid className={`item ${item.completed && 'completed'}`}>
             <Row>
-                <h1>
-                ToDo App by Papon Choonhaklai
-                </h1>
                 <Col xs={1} className="text-center">
+                    <Col xs={12}>
+                      <h1 className="text-center">ToDo App by Papon Choonhaklai</h1>
+                    </Col>
                     <Button
                         className="toggles"
                         size="sm"
